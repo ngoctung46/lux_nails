@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>BeautySalon</title><base href="https://ngoctung46.github.io/lux_nails/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="assets/css/bootstrap.css"><!-- Bootstrap-Core-CSS --><link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all"/><!-- Style-CSS --><link rel="stylesheet" href="assets/css/font-awesome.css"><!-- Font-Awesome-Icons-CSS --><link rel="stylesheet" href="assets/css/lightbox.css"><!-- For-Gallery-CSS --><link href="styles.9952e378df8422d3d281.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><!-- js-scripts --><script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script><script type="text/javascript" src="assets/js/bootstrap.js"></script><!-- Necessary-JavaScript-File-For-Bootstrap --><!--  light box js --><script src="assets/js/lightbox-plus-jquery.min.js"></script><!-- //light box js--><!-- Baneer-js --><script src="assets/js/responsiveslides.min.js"></script><script>(function ($) {
+        $("#slider").responsiveSlides({
+          auto: true,
+          pager:false,
+          nav: true,
+          speed: 1000,
+          namespace: "callbacks",
+          before: function () {
+            $('.events').append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $('.events').append("<li>after event fired.</li>");
+          }
+        });
+      }(jQuery));</script><!-- //Baneer-js --><!-- start-smoth-scrolling --><script type="text/javascript" src="assets/js/move-top.js"></script><script type="text/javascript" src="assets/js/easing.js"></script><script type="text/javascript">jQuery(document).ready(function($) {
+          $(".scroll").click(function(event){		
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+          });
+        });</script><!-- start-smoth-scrolling --><!-- Stats-Number-Scroller-Animation-JavaScript --><script src="assets/js/waypoints.min.js"></script><script src="assets/js/counterup.min.js"></script><script>jQuery(document).ready(function( $ ) {
+          $('.counter').counterUp({
+            delay: 100,
+            time: 1000
+          });
+        });</script><!-- //Stats-Number-Scroller-Animation-JavaScript --><!-- smooth scrolling-bottom-to-top --><script type="text/javascript">$(document).ready(function($) {
+        /*
+          var defaults = {
+          containerID: 'toTop', // fading element id
+          containerHoverID: 'toTopHover', // fading element hover id
+          scrollSpeed: 1200,
+          easingType: 'linear' 
+          };
+        */								
+        $().UItoTop({ easingType: 'easeOutQuart' });
+        }(jQuery));</script><a href="#" id="toTop" style="display: block"><span id="toTopHover" style="opacity: 1"></span></a><!-- //smooth scrolling-bottom-to-top --><!-- //js-scripts --><script type="text/javascript" src="inline.1f2463aa9a1c0c16a2bb.bundle.js"></script><script type="text/javascript" src="polyfills.67d068662b88f84493d2.bundle.js"></script><script type="text/javascript" src="vendor.14eb4c5e61eb3b807b1b.bundle.js"></script><script type="text/javascript" src="main.620836fd301878c6757b.bundle.js"></script></body></html>
